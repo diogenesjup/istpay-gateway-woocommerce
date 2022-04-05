@@ -1,0 +1,8 @@
+{
+ 	"name" : "Plugin Istpay Gateway",
+ 	"version" : "1.4.0",
+ 	"download_url" : "https://www.diogenesjunior.com.br/diretorios/plugins/plugin-istpay-gateway/plugin-istpay-gateway.zip",
+ 	"sections" : {
+ 		"description" : "API de notificações habilitada! Qualquer dúvida ou problema, me envie um e-mail no falecom@diojr.me"
+ 	}
+ }
