@@ -20,6 +20,10 @@ Obviamente, cada API acima, tem seus próprios meios de autenticação, informa�
 *BOLETO E PIX:* Autenticação usando CI e CS (Cliente ID e Client Secret)
 
 
+*Atenção:* A escolha de serem dois endpoints diferentes, e 4 dados de autenticação, não foi uma escolha do desenvolvedor, e sim uma escolha da equipe da Istpay. Qualquer mudança nessa característica, depende, tendo isso posto, unicamente da equipe Istpay.
+
+
+
 ## Fluxo de comunicação
 
 O fluxo de conexão acontece da seguinte maneira:
