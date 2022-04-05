@@ -2,6 +2,8 @@
 
 Esse repositório contem os arquivos do código fonte do plugin Istpay Gateway para WooCommerce, até a versão 1.4.0, além de alguns comentários sobre a abordagem do desenvolvimento, e a infraestrutura de negócio da Istpay pagamentos no período de Abril de 2022.
 
+*Atenção:* Esse plugin não terá mais atualizações à partir desse repositório. O arquivo .JSON de atualização, é apenas um exemplo sobre como estava sendo configurado o canal de atualizações com o WordPress.
+
 ## Sobre a API
 
 As API's de conexão são de total responsabilidade da Instpay, e por tanto, toda a documentação a respeito da API poderão ser fornecidas diretamente pela equipe da Istpay.
