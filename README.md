@@ -12,10 +12,13 @@ As API's de conexão são de total responsabilidade da Instpay, e por tanto, tod
 
 *API BOLETO e PIX:* https://d8dbbf91-61c0-4f83-802f-a90889fb2550.mock.pstmn.io
 
+
 Obviamente, cada API acima, tem seus próprios meios de autenticação, informação essa, que pode ser fornecedia pela equipe da Istpay.
 
 *CARTÃO DE CRÉDITO:* Autenticação usando Login e Senha
+
 *BOLETO E PIX:* Autenticação usando CI e CS (Cliente ID e Client Secret)
+
 
 ## Fluxo de comunicação
 
