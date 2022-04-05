@@ -7,6 +7,7 @@ Esse repositório contem os arquivos do código fonte do plugin Istpay Gateway p
 As API's de conexão são de total responsabilidade da Instpay, e por tanto, toda a documentação a respeito da API poderão ser fornecidas diretamente pela equipe da Istpay.
 
 *API CARTÃO DE CRÉDITO:* https://api.globalpaysolucoes.com.br
+
 *API BOLETO e PIX:* https://d8dbbf91-61c0-4f83-802f-a90889fb2550.mock.pstmn.io
 
 Obviamente, cada API acima, tem seus próprios meios de autenticação, informação essa, que pode ser fornecedia pela equipe da Istpay.
@@ -19,33 +20,33 @@ Obviamente, cada API acima, tem seus próprios meios de autenticação, informa�
 O fluxo de conexão acontece da seguinte maneira:
 
 ```
-┌─────────────────────────┐
-│                         │
-│                         │
-│   Pedido WooCommerce    │
-│                         │
-│                         │
-└───────────┬─────────────┘
-            │
-            │
-            │
-┌───────────▼─────────────┐
-│                         │
-│                         │
-│  API ISTPAY CC/BC/PIX   │
-│                         │
-│                         │
-└───────────┬─────────────┘
-            │
-            │
-            │
-┌───────────▼─────────────┐
-│                         │
-│                         │
-│     Retorno com TID     │
-│                         │
-│                         │
-└─────────────────────────┘
+					┌─────────────────────────┐
+					│                         │
+					│                         │
+					│   Pedido WooCommerce    │
+					│                         │
+					│                         │
+					└───────────┬─────────────┘
+					            │
+					            │
+					            │
+					┌───────────▼─────────────┐
+					│                         │
+					│                         │
+					│  API ISTPAY CC/BC/PIX   │
+					│                         │
+					│                         │
+					└───────────┬─────────────┘
+					            │
+					            │
+					            │
+					┌───────────▼─────────────┐
+					│                         │
+					│                         │
+					│     Retorno com TID     │
+					│                         │
+					│                         │
+					└─────────────────────────┘
 ```
 
 O ambiente da Istpay, tanto para Cartão de Crédto, como para Boleto bancário e PIX, não possui uma URL ou Endpoint de notificação para confirmação de pagamento, caso deseje saber se um pagamento foi confirmado ou não, você precisa acessar um webhook de notificação. *Note que:* pelo ambiente da Istpay não possuir um endpoit ou callback URL de notificação, pode ser tentador ficar realizando consultas de "hora em hora" para verificar status de pagamentos, mas isso pode ocasionar uma sobrecarga de requisições na maioria dos servidores do mercado. Cenário hipotético: 100 vendas realizadas em um dia, sendo consultadas uma vez a cada 10 minutos, ao final de 24 horas, serão ao menos 240.000 requisições e isso, exponêncialmente.
@@ -245,6 +246,7 @@ curl_setopt_array($curl, array(
 
 ## Contato
 Em caso de dúvidas sobre o desenvolvimento, você pode enviar um e-mail para diogenesjunior.ti@gmail.com.
+
 Em caso de dúvidas sobre o ambiente, negócio ou questões comerciais, você pode entrar em contato diretamente com a equipe Istpay.
 
 
