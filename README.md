@@ -18,7 +18,7 @@ Obviamente, cada API acima, tem seus próprios meios de autenticação, informa�
 
 O fluxo de conexão acontece da seguinte maneira:
 
-
+```
 ┌─────────────────────────┐
 │                         │
 │                         │
@@ -46,7 +46,7 @@ O fluxo de conexão acontece da seguinte maneira:
 │                         │
 │                         │
 └─────────────────────────┘
-
+```
 
 O ambiente da Istpay, tanto para Cartão de Crédto, como para Boleto bancário e PIX, não possui uma URL ou Endpoint de notificação para confirmação de pagamento, caso deseje saber se um pagamento foi confirmado ou não, você precisa acessar um webhook de notificação. *Note que:* pelo ambiente da Istpay não possuir um endpoit ou callback URL de notificação, pode ser tentador ficar realizando consultas de "hora em hora" para verificar status de pagamentos, mas isso pode ocasionar uma sobrecarga de requisições na maioria dos servidores do mercado. Cenário hipotético: 100 vendas realizadas em um dia, sendo consultadas uma vez a cada 10 minutos, ao final de 24 horas, serão ao menos 240.000 requisições e isso, exponêncialmente.
 
